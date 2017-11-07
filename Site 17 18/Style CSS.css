@@ -1,0 +1,136 @@
+@charset "UTF-8"; /* Document CSS*/
+@font-face{font-family: 'Roboto-Light.ttf';
+src:url("police/Roboto-Light.ttf");}
+
+body {font-family: 'Roboto-Light.ttf'; background-color: #24221f;margin: 0px; padding: 0px; background: url(images/arma3_screenshot_01.jpg) no-repeat center fixed;  -webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover; }
+
+h1 {color: #fff; margin: 0px; padding-left: 4px;}
+
+/*font de la page hs  font-family: Roboto-Light;*/
+/*couleur*/
+.vert  {color:#76b41e; }
+
+/* Header*/
+#conteneur {width:980px; margin:auto;} 
+
+#logo {width: 100px; height: 156px;/* texte_aligne: center;*/}
+
+#haut {height: auto; padding-top: 0px;}
+
+#menu {background-color: #32352d/*couleur maron*/; width: 980px; text-align: center;line-height: 50px; border-radius: 10px 10px 10px 10px;-webkit-border-radius:10px 10px 10px 10px;-moz-border-radius:10px 10px 10px 10px;-o-border-radius:10px 10px 10px 10px;}
+
+#menu li {list-style-type: none; display:inline-block; font-size: 20px;}
+
+#menu li a {text-decoration: none;color:#32352d; background-color: #edab4d/*couleur jaune*/;transition: all .3s ease-in;-webkit-transition: all .3s ease-in;-moz-transition: all .3s ease-in;-o-transition: color .3s;  padding: 10px; }/*form de base*/
+
+#menu li a:hover {text-decoration: none;color:#ffffff;background-color: #a74792;padding: 20px;}/*forme au survol de la sourie*/
+
+
+
+/* Contenu*/
+#contenu {width: 640px; background-color: #32352d/*couleur maron*/;padding: 20px;float: left; border-radius: 20px; -webkit-border-radius:20px;-moz-border-radius:20px;-o-border-radius:20px;}
+
+#contenu p {color: #edab4d;font-size: 18px; line-height: /*espace entre les ligne en px*/; margin-bottom: /*espace pied de paragraphe*/}
+
+#contenu p:first-letter {color: #d47314; font-size: 30px; display:block; float: left; padding: 1px; line-height: 20px;}
+
+#contenu h1 { background:url(images/application.png) no-repeat;height: 30px;padding-left:35px; color:#edab4d; line-height: 30px;}
+
+#contenu h1:hover { background:url(images/application.png) 0px 15px no-repeat; transition: all .3s}
+
+
+
+/* Sidebare*/
+#sidebar {width: 290px; background-color: #edab4d/*couleur jaune*/; float: left; margin-left: 10px; height: auto/*taille de la sidebare*/; border-radius: 20px; -webkit-border-radius:20px;-moz-border-radius:20px;-o-border-radius:20px;}
+
+#sidebar h2 {margin-left:10px; color: #32352d;}
+
+#sidebar ul {list-style-type: none; margin-left:10px; font-size: 10px;}
+
+#sidebar li {list-style-type: none; font-size: 11px; background:url(images/Mushroomicone.png) no-repeat; padding-left: 15px;}
+
+.resaux {width: 100px; height: 10px; text-indent:5000px/*eloigne les mots lien en attendant de pouvoir les suprimer*/; display: inline-block; transition: all .3s ease-in;-webkit-transition: all .3s ease-in;-moz-transition: all .3s ease-in;-o-transition: color .3s; background-color: #fff; padding: 10px;}
+/*(centrer les bouttons ou mettre un bord a gauche  )*/
+#facebook {background:url(images/iconfb2.png) 0 0 no-repeat;}
+#facebook:hover{background:url(images/iconfb2.png) 0 -30px no-repeat;}
+
+#youtube {background:url(images/youtube.jpg) 0 0 no-repeat;}
+#youtube:hover{background:url(images/youtube.jpg) 0 -30px no-repeat;}
+
+#twitter {background:url(images/twitter.jpg) 0 0 no-repeat;}
+#twitter:hover{background:url(images/twitter.jpg) 0 -30px no-repeat;}
+
+#twitch {background:url(images/twitch.jpg) 0 0 no-repeat;}
+#twitch:hover{background:url(images/twitch.jpg) 0 -30px no-repeat;}
+
+
+
+/* footre*/
+#pdp {width: 940px; background-color: #32352d/*couleur maron*/; float: left; height: auto; color: #edab4d; margin-top: 15px; padding:10px ; font-size: 15px;border-radius: 20px; -webkit-border-radius:20px;-moz-border-radius:20px;-o-border-radius:20px;}
+
+#pdp p {margin-left: 10px; text-align: center;}
+
+#bouton {margin: 20px; text-align: center;}
+
+#bouton a {display: inline-block; font-size:18px; transition: all; o.5s; text-decoration: none;}
+
+.radius {padding: 15px 30px; color:#fff;background-color:#7a9435 ; }
+
+.radius:hover {border-radius:50px ;}
+
+.zoom {padding: 15px 30px; color:#fff;background-color:#7a9435 ; }
+
+.zoom:hover {transform: scale(1.25);-webkit-transform: scale(1.25);-moz-transform: scale(1.25);-o-transform: scale(1.25);}
+
+/* hor service 
+.batement {padding: 15px 30px; color:#fff;background-color:#7a9435 ; animation:pause 1s ease infinite;-webkit-animationpulse 1s ease infinite; }
+
+.batement:hover {}
+
+@-webkit-keyframes pluse{ 
+	0%{-webkit-transform: scale(1);}
+	50%{-webkit-transform: scale(1.4);}
+	100%{-webkit-transform: scale(1);}
+
+}
+@-moz-keyframes pluse{ 
+	0%{-moz-transform: scale(1);}
+	50%{-moz-transform: scale(1.4);}
+	100%{-moz-transform: scale(1);}
+
+}
+@-o-keyframes pluse{ 
+	0%{-o-transform: scale(1);}
+	50%{-o-transform: scale(1.4);}
+	100%{-o-transform: scale(1);}
+
+}
+
+*/
+
+/*page image*/
+
+
+/* #rust:hover {transform: scale(2);-webkit-transform: scale(2);-moz-transform: scale(2);-o-transform: scale(2);}
+
+#fontaine:hover {transform: scale(2);-webkit-transform: scale(2);-moz-transform: scale(2);-o-transform: scale(2);} */
+
+
+
+/*page autre*/
+
+{px solid #FF6600;
+   margin:0px;
+   padding:3px;
+  
+  }
+.Tableau p {
+   clear:left;
+   margin:0px;
+   padding:0px;
+   height:100% !important; height:1em;
+  }
+.Tableau p.legende {font-weight:bold}
+.Tableau span.col1 {width:70px}
+.Tableau span.col2 {width:120px}
+.Tableau span.col3 {width:90px}
